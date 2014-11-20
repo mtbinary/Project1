@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kGr-5J-BqB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="kGr-5J-BqB">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -52,7 +52,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="33" y="89" width="229" height="98"/>
+                                    <rect key="frame" x="33" y="89" width="229" height="56"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Albert_Einstein_1979_USSR_Stamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7ZJ-kH-j3j">
@@ -61,6 +61,14 @@
                                     <rect key="frame" x="270" y="105" width="101" height="107"/>
                                 </variation>
                             </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1J-7p-PCf">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="153" width="229" height="50"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -70,6 +78,7 @@
                                 <exclude reference="XQe-Zd-X1L"/>
                                 <exclude reference="HWO-IY-mm3"/>
                                 <exclude reference="7ZJ-kH-j3j"/>
+                                <exclude reference="X1J-7p-PCf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -79,14 +88,16 @@
                                 <include reference="XQe-Zd-X1L"/>
                                 <include reference="HWO-IY-mm3"/>
                                 <include reference="7ZJ-kH-j3j"/>
+                                <include reference="X1J-7p-PCf"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="enterMessageTextField" destination="15b-pE-5Lt" id="8GK-Cc-5Nj"/>
+                        <outlet property="enterMessageTextField" destination="15b-pE-5Lt" id="X4P-c5-j5W"/>
                         <outlet property="enterNameTextField" destination="OUA-k7-u3r" id="4no-FZ-Uaj"/>
                         <outlet property="mailButton" destination="XQe-Zd-X1L" id="Gz5-UU-QBt"/>
                         <outlet property="messageLabel" destination="HWO-IY-mm3" id="5e4-HX-sbQ"/>
+                        <outlet property="nameLabel" destination="X1J-7p-PCf" id="xgg-7h-4Wh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
